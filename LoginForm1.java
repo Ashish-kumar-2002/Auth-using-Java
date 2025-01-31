@@ -19,7 +19,7 @@ Toolkit t=Toolkit.getDefaultToolkit();
 Dimension d=t.getScreenSize();
 double x=d.getWidth();
 double y=d.getHeight();
-setLocation((int)(x/3),(int)(y/3));
+setLocation(400,300);
 Color c=new Color(224,190,109);
 setBackground(c);
 //setResizable(false);
@@ -27,6 +27,7 @@ setBackground(c);
 
 txt_username=new TextField();
 txt_password=new TextField();
+txt_password.setEchoChar('*');
 
 lbl_username=new Label("username:");
 lbl_password=new Label("password");
